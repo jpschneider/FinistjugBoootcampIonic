@@ -1,0 +1,10 @@
+<ion-view view-title="Friends">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-beer" ng-repeat="beer in beers" type="item-text-wrap" href="#/tab/beers/{{beer.id}}">
+        <!--<img ng-src="{{friend.face}}">-->
+        <h2>{{beer.description}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

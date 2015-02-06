@@ -1,0 +1,17 @@
+<ion-view view-title="Beers">
+  <ion-content>
+  	<div class="list list-inset">
+  		<label class="item item-input">
+    		<i class="icon ion-search placeholder-icon"></i>
+    		<input type="text" placeholder="Search" ng-model="query">
+ 		 </label>
+	</div>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="beer in beers | filter:query" type="item-text-wrap" href="#/tab/beers/{{beer.id}}/{{beer.name}}" >
+        <img ng-src="{{beer.img}}">
+        <h2>{{beer.name}}</h2>
+        <p>{{beer.description}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

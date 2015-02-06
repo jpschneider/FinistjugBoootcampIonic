@@ -1,0 +1,49 @@
+<ion-view view-title="{{beerName}}">
+  <ion-content class="padding">
+    	<a href="#/tab/image/{{imgName}}"><img ng-src="{{beer.img}}" class="beer"></a>
+    	<h1>{{beerName}}</h1>
+    	<p>{{beer.description}}</p>
+
+    	<ul class="beer-thumbs">
+  <li>
+    <a href="#/tab/image/{{imgName}}"><img ng-src="{{beer.img}}"></a>
+  </li>
+  <li>
+   <a href="#/tab/image/{{labelName}}"><img ng-src="{{beer.label}}"></a>
+  </li>
+</ul>
+    <ul class="specs">
+  <li>
+    <dl>
+      <dt>{{"Alcohol content" | uppercase}}</dt>
+      <dd>{{beer.alcohol | strongAlcohol}}</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>Brewery</dt>
+      <dd>{{beer.brewery}}</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>Availability</dt>
+      <dd>{{beer.availability}}</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>Style</dt>
+      <dd>{{beer.style}}</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>Serving instructions</dt>
+      <dd>{{beer.serving}}</dd>
+    </dl>
+  </li>
+</ul>
+</div>
+  </ion-content>
+</ion-view>
